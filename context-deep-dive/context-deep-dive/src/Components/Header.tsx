@@ -1,16 +1,12 @@
 import React from "react"
 
-import UserContext from "../App"
+import { UserContext } from "./UserContext"
 
-type Props = {
-    title: string;
-}
-
-export const Header: React.FC<Props> = ({title}) => {
+export const Header: React.FC = ({ user }) => {
     return (
         <div className="header">
             <h1>Header here!</h1>
-            <h2>Props Here: {title}</h2>
+            <h2>Username: {user}</h2>
         </div>
     )
 }
