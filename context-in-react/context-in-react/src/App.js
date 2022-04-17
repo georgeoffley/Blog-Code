@@ -1,14 +1,13 @@
 import React from 'react';
 
 import Page from "./Components/Page"
-
-const userContext = React.createContext('goffley')
+import { UserContext } from './Components/UserContext';
 
 function App() {
   return (
-    <UserLoginContext.Provider value="not_goffley">
+    <UserContext.Provider value="not_goffley">
       <Page />
-    </UserLoginContext.Provider>
+    </UserContext.Provider>
   );
 }
 

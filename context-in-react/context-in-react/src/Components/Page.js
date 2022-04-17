@@ -1,15 +1,18 @@
 import React from "react"
-import { useContext } from "react";
 
 import Header from "./Header"
+import MainContent from "./MainContent"
 import Footer from "./Footer"
 
-export const Page = () => {
+const Page = () => {
 
     return (
-        <>
-            <Header children={contextUser} />
-            <Footer children={contextUser} />
-        </>
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
     );
 }
+
+export default Page;
