@@ -1,11 +1,12 @@
 import React from 'react';
 
 import Page from "./Components/Page"
-import { UserContext } from './Components/UserContext';
+
+export const UserContext = React.createContext();
 
 function App() {
   return (
-    <UserContext.Provider value="not_goffley">
+    <UserContext.Provider value="georgeoffley">
       <Page />
     </UserContext.Provider>
   );

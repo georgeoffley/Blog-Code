@@ -1,13 +1,13 @@
 import React from "react"
 
-import { UserContext } from "./UserContext";
+import { UserContext } from "../App";
 
 export const Header = () => {
-    const contextType = React.useContext(UserContext);
+    const userNameContext = React.useContext(UserContext);
     return (
-        <div className="footer">
+        <div className="text-xl border-2 bg-gray-400">
             <h1>Header here!</h1>
-            <h2>Username: {contextType}</h2>
+            <h2 className="text-white font-bold">Username: {userNameContext}</h2>
         </div>
     );
 }

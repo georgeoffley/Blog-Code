@@ -1,14 +1,14 @@
 import React from "react"
 
-import { UserContext } from "./UserContext";
+import { UserContext } from "../App";
+import UserBox from "./UserBox"
 
 const MainContent = () => {
-    const contextType = React.useContext(UserContext);
+    const userNameContext = React.useContext(UserContext);
     return (
-        <div className="main-content">
+        <div className="bg-green-400 border-2">
             <h1>MainContent here!</h1>
-            <h2>For Logged In User:</h2>
-            <h3>{contextType}</h3>
+            <UserBox />
         </div>
     );
 }
